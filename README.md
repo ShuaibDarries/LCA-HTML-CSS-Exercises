@@ -1,5 +1,4 @@
 # LCA-HTML-CSS-Exercises
-# LCA-HTML-CSS-Exercises
 
 **Trainee:** [Shuaib Darries]
 **Programme:** YouthCode Off-Site - Cohort 2, 2026
