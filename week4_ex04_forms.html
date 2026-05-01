@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Exercise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+      h2 {
+        color: #333;
+        border-bottom: 2px solid #539187;
+        padding-bottom: 10px;
+      }
+      form {
+        background: #f0eded;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #539187;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #577771;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- FORM 1: Registration Form (POST method) -->
+    <h2>Registration Form</h2>
+    <form action="https://formspree.io/f/xpwzpzrd" method="POST">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" required />
+
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" required />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">-- Select Gender --</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefer_not_to_say">Prefer not to say</option>
+      </select>
+
+      <label for="date_of_birth">Date of Birth:</label>
+      <input type="date" id="date_of_birth" name="date_of_birth" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <button type="submit">Submit Registration</button>
+    </form>
+
+    <!-- FORM 2: Search Form (GET method) -->
+    <h2>Search Form</h2>
+    <form action="https://httpbin.org/get" method="GET">
+      <label for="search_name">Search Name:</label>
+      <input
+        type="text"
+        id="search_name"
+        name="search_name"
+        placeholder="Enter name to search..."
+        required
+      />
+
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>
