@@ -1,0 +1,92 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 60px; /* Space for fixed navbar */
+}
+
+/* Navigation Bar Styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+/* Blog Post Styling */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog-post {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.blog-post p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Link Styling */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Proper spacing for all elements */
+.blog-post:last-child {
+  margin-bottom: 40px;
+}
